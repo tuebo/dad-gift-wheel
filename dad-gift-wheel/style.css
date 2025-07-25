@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ffeaa7, #fab1a0);
+  text-align: center;
+}
+.container {
+  max-width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.wheel-container {
+  position: relative;
+  width: 90vw;
+  max-width: 360px;
+  aspect-ratio: 1 / 1;
+}
+.pointer {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #2d3436;
+}
+button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 20px;
+  background-color: #d63031;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#result {
+  margin-top: 30px;
+  font-size: 22px;
+  color: #2d3436;
+  font-weight: bold;
+}
+#prize-img {
+  max-width: 90%;
+  margin-top: 20px;
+  display: none;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
